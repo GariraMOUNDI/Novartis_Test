@@ -14,6 +14,7 @@
 # production
 /build
 .idea
+node_modules
 yarn.lock
 
 # misc
@@ -34,3 +35,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+
