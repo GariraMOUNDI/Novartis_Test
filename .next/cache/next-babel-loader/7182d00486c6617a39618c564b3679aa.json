@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { StatisticsData } from \"./query/StatisticsData\";\nimport { ChartData } from \"./query/ChartData\";\nexport const GlobalState = async (startYear, endYear) => ({\n  chartData: await ChartData(startYear, endYear),\n  statistics: await StatisticsData(`${startYear}-01-01`, `${endYear}-12-31`)\n});","map":null,"metadata":{},"sourceType":"module"}

@@ -1,1 +1,0 @@
-{"ast":null,"code":"export * from \"./MyCss\";","map":{"version":3,"sources":["D:/Novartis/with-typescript/src/components/css/index.tsx"],"names":[],"mappings":"AAAA,cAAc,SAAd","sourcesContent":["export * from \"./MyCss\"\r\n\r\n"]},"metadata":{},"sourceType":"module"}
