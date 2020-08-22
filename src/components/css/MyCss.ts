@@ -72,8 +72,8 @@ const List = makeStyles(() => ({
 
 
 export const MyCss = {
-    layout : Layout(),
-    error : Error(),
-    select : Select(),
-    list : List()
+    layout : Layout,
+    error : Error,
+    select : Select,
+    list : List
 }

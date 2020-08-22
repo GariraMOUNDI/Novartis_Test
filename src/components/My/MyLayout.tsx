@@ -8,7 +8,7 @@ interface MyLayoutProps {
 }
 
 export const MyLayout = ({ children, title } : MyLayoutProps ) => {
-    const styles = MyCss.layout
+    const styles = MyCss.layout()
     return (
         <Container className={ styles.root }>
             <Container>

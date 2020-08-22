@@ -16,7 +16,7 @@ interface MyDrugListProps {
     data : Domain[]
 }
 export const MyList = ({ headers, title, data,genderTable = false} : MyDrugListProps) => {
-    const styles = MyCss.list
+    const styles = MyCss.list()
     return (
         <Container className = { styles.root }>
             <InputLabel className = { styles.label } >

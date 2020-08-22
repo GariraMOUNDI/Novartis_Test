@@ -11,7 +11,7 @@ interface MySelectProps {
 }
 
 export const MySelect = ( { id, value,placeholder, items, onHandleChange } : MySelectProps) => {
-    const styles = MyCss.select
+    const styles = MyCss.select()
     return (
         <FormControl className = { styles.root }>
             <InputLabel id={id}>{placeholder}</InputLabel>

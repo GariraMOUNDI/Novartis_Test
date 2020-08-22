@@ -3,7 +3,7 @@ import {MyCss} from "../css";
 
 
 export const MyErrorPage = () => {
-    const styles = MyCss.error
+    const styles = MyCss.error()
     return (
         <Container className={ styles.root }>
             <InputLabel className={ styles.label }>

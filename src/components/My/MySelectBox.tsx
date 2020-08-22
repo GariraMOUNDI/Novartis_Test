@@ -15,7 +15,7 @@ interface BoxState {
 }
 
 export const MySelectBox = ({ items, onYearChange} : MySelectBoxProps) => {
-    const styles = MyCss.select
+    const styles = MyCss.select()
     const [boxState, setBoxState] = useState<BoxState>({
         error : false,
         startYear : items[items.length-1],
