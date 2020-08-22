@@ -56,11 +56,11 @@ export const MySelectBox = ({ items, onYearChange} : MySelectBoxProps) => {
     return (
         <Container style = {{ display : "flex", marginBottom : "10px"}}>
             <InputLabel>Error year</InputLabel>
-            <InputLabel style = { {...styles.label, marginRight: "10px"} } >
+            <InputLabel className={styles.label} style={{marginRight: "10px"}} >
                 Fetch data from
             </InputLabel>
             <MySelect id={"start"} value={boxState.startYear} placeholder={"year"} items={items} onHandleChange={ selected => { onChange(selected, true)} }/>
-            <InputLabel style = {{...styles.label, width: "80px"} } >
+            <InputLabel className={styles.label} style={{ width: "80px"} } >
                 to
             </InputLabel>
             <MySelect id={"end"} value={boxState.endYear} placeholder={"year"} items={items} onHandleChange={selected => { onChange(selected, false)}}/>

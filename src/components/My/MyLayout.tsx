@@ -10,9 +10,9 @@ interface MyLayoutProps {
 export const MyLayout = ({ children, title } : MyLayoutProps ) => {
     const styles = MyCss.layout
     return (
-        <Container style={ styles.root }>
+        <Container className={ styles.root }>
             <Container>
-                <InputLabel style = { styles.label } >
+                <InputLabel className = { styles.label } >
                     {title}
                 </InputLabel>
             </Container>

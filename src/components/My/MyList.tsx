@@ -18,19 +18,17 @@ interface MyDrugListProps {
 export const MyList = ({ headers, title, data,genderTable = false} : MyDrugListProps) => {
     const styles = MyCss.list
     return (
-        <Container style = { styles.root }>
-            <InputLabel style = { styles.label } >
+        <Container className = { styles.root }>
+            <InputLabel className = { styles.label } >
                 { title }
             </InputLabel>
-            <TableContainer style={ genderTable ? styles.table2 : styles.table1 } component={Paper}>
+            <TableContainer className={ genderTable ? styles.table2 : styles.table1 } component={Paper}>
                 <Table aria-label="simple table">
                     <TableHead >
                         <TableRow>
                             {
                                 headers.map(head => {
-                                    let align : string
-                                    head === headers[0] ? align = "left" : align = "right"
-                                    return (<TableCell key={head} align={align}  style={{ fontWeight : "bold"}}>{head}</TableCell>)
+                                    return (<TableCell key={head} align={ head === headers[0] ? "left" : "right"}  style={{ fontWeight : "bold"}}>{head}</TableCell>)
                                 })
                             }
                         </TableRow>

@@ -1,5 +1,5 @@
 import {FormControl, InputLabel, MenuItem, Select} from "@material-ui/core";
-import React, {useState} from "react";
+import React from "react";
 import {MyCss} from "../css";
 
 interface MySelectProps {
@@ -13,7 +13,7 @@ interface MySelectProps {
 export const MySelect = ( { id, value,placeholder, items, onHandleChange } : MySelectProps) => {
     const styles = MyCss.select
     return (
-        <FormControl style = { styles.root }>
+        <FormControl className = { styles.root }>
             <InputLabel id={id}>{placeholder}</InputLabel>
             <Select
                 labelId={id}
