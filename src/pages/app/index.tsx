@@ -1,8 +1,8 @@
 
 
 import React, {useState} from "react";
-import {MyList, MyLayout, MySelectBox, MyChart, MyErrorPage } from "../components";
-import {GlobalState, GlobalStateProps} from "./api";
+import {MyList, MyLayout, MySelectBox, MyChart, MyErrorPage } from "../../components";
+import {GlobalState, GlobalStateProps} from "../api";
 import {Container} from "@material-ui/core";
 
 const IndexPage = (props : GlobalStateProps) => {
