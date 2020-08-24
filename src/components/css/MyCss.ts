@@ -11,22 +11,25 @@ const Layout = makeStyles(() => ({
         marginTop : "10px"
     },
     label : {
-        // textAlign : "center",
-        // fontWeight: "900",
-        // fontSize: "xx-large",
-        // fontFamily: "cursive"
+        textAlign : "center",
+        fontWeight: "bold",
+        fontSize: "xx-large",
+        fontFamily: "cursive"
     }
+
 }));
+
 
 const Select = makeStyles(() => ({
     root : {
         width : "80px",
+        marginRight : "10px"
     },
     label : {
-        // fontWeight: "900",
-        // fontFamily: "cursive",
-        // textAlign : "center",
-        // fontSize: "large",
+        fontWeight: "bold",
+        fontFamily: "cursive",
+        textAlign : "center",
+        fontSize: "large",
         marginTop: "20px",
         marginBottom: "10px",
     }
@@ -44,7 +47,10 @@ const Error = makeStyles(() => ({
     },
     label : {
         textAlign : "center",
-        fontWeight : "bold"
+        fontWeight : "bold",
+        marginTop: "15px",
+        marginBottom: "10px",
+        marginLeft : "40px"
     }
 }))
 
@@ -53,10 +59,10 @@ const List = makeStyles(() => ({
         width : "60%"
     },
     label : {
-        // fontWeight: "900",
-        // fontFamily: "cursive",
-        // textAlign : "center",
-        // fontSize: "large",
+        fontWeight: "bold",
+        fontFamily: "cursive",
+        textAlign : "center",
+        fontSize: "large",
         marginTop: "20px",
         marginBottom: "10px",
     },
@@ -68,8 +74,6 @@ const List = makeStyles(() => ({
         overflowX : "auto",
     }
 }))
-
-
 
 export const MyCss = {
     layout : Layout,

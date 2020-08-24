@@ -12,7 +12,7 @@ export const MyLayout = ({ children, title } : MyLayoutProps ) => {
     return (
         <Container className={ styles.root }>
             <Container>
-                <InputLabel className = { styles.label } >
+                <InputLabel className={ styles.label }>
                     {title}
                 </InputLabel>
             </Container>

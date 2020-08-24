@@ -7,7 +7,8 @@ interface MyChartProps {
     data : Result[]
 }
 
-export const MyChart = ({data} : MyChartProps) => (
+export const MyChart = ({data} : MyChartProps) => {
+    return (
         <Paper>
             <Chart data={data}>
                 <ArgumentAxis />
@@ -18,5 +19,7 @@ export const MyChart = ({data} : MyChartProps) => (
                     name={"MyChart"}
                 />
             </Chart>
-        </Paper>
-)
+        </Paper>)
+
+}
+

@@ -2,7 +2,7 @@
 const getTotalRecords = async (startDate : string, endDate: string) => {
     try{
         const res = await fetch(`https://api.fda.gov/drug/event.json?search=receivedate:[${startDate}+TO+${endDate}]&limit=1`)
-            .catch(error => console.log(error))
+            .catch(() => {console.log("An error occured while fetching data")})
         if (res && "json" in res) {
             const json = await res.json()
             return json.meta.results.total
@@ -12,8 +12,6 @@ const getTotalRecords = async (startDate : string, endDate: string) => {
         return null
     }
 }
-
-
 
 const getSexDivision = async (startDate : string, endDate: string) => {
     try{
